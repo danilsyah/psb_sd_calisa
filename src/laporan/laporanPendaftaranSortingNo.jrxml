@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="laporanPendaftaran" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="120ed2ba-9647-4f28-8154-39c6188d9d4f">
+	<property name="ireport.zoom" value="1.4641000000000013"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="6"/>
+	<parameter name="p_tahun_ajaran" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[SELECT
+     *
+FROM
+     `v_pendaftaran` v_pendaftaran where tahun_ajaran = $P{p_tahun_ajaran} order by no_pendaftaran]]>
+	</queryString>
+	<field name="no_pendaftaran" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="bio_nama_lengkap" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="bio_nama_panggilan" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="bio_jenis_kelamin" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="bio_tempat_lahir" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="bio_tanggal_lahir" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="bio_agama" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="bio_kewarganegaraan" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="bio_anak_ke" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="bio_jml_saudara_kandung" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="bio_jml_saudara_tiri" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="bio_jml_saudara_angkat" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="bio_bahasa_sehari_hari" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="bio_berat_badan" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="bio_tinggi_badan" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="bio_golongan_darah" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="bio_penyakit_berat_yang_pernah_diderita" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="bio_alamat_tempat_tinggal" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="bio_no_telepon" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="bio_bertempat_tinggal" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="wali_nama_ayah_kandung" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="wali_nama_ibu_kandung" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="wali_pendidikan_tertinggi_ibu" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="wali_pendidikan_tertinggi_ayah" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="wali_pekerjaan_ayah" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="wali_pekerjaan_ibu" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="wali_nama_wali_siswa" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="wali_pendidikan_tertinggi_wali_siswa" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="wali_hubungan_terhadap_anak" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="wali_pekerjaan_wali_siswa" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="wali_pendapatan_perbulan_orang_tua" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="asal_masuk_sekolah" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="asal_anak" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="asal_tk_nama_tk" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="asal_tk_nomor_tahun_surat_keterangan" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="asal_tk_lama_belajar" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="asal_pindah_nama_sekolah_asal" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="asal_pindah_tanggal" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="asal_pindah_dari_kelas" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="asal_diterima_sekolah_tanggal" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="asal_diterima_dikelas" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="kode_tahun_ajaran" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="lampiran_akte_kelahiran" class="java.lang.Object">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="lampiran_kk" class="java.lang.Object">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="lampiran_ktp_ortu" class="java.lang.Object">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="lampiran_foto_ortu" class="java.lang.Object">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="lampiran_foto_anak" class="java.lang.Object">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tahun_ajaran" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="semester" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<variable name="no" class="java.lang.Integer" calculation="Count">
+		<variableExpression><![CDATA[$V{no}.intValue()]]></variableExpression>
+	</variable>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="120" splitType="Stretch">
+			<image>
+				<reportElement x="0" y="2" width="92" height="94" uuid="0284ff0d-f670-41fa-84e7-21d2c8f43a28"/>
+				<imageExpression><![CDATA["D:\\java\\psb_sd_calista\\src\\img\\Logo.png"]]></imageExpression>
+			</image>
+			<line>
+				<reportElement x="0" y="95" width="555" height="1" uuid="60bc77fd-1d71-45b7-a395-8e0c9d59bf9b"/>
+			</line>
+			<staticText>
+				<reportElement x="140" y="16" width="263" height="20" uuid="409267c4-56e1-4cda-9ead-7b078c385a40"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[LAPORAN PENERIMAAN SISWA BARU ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="178" y="36" width="176" height="20" uuid="5bc0b0a9-ab9d-4de5-b18e-524faa2f0ce9"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[SD CALISA]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="278" y="56" width="100" height="20" uuid="9aedfbf1-eb6e-4c35-a985-6abf9e61464c"/>
+				<textFieldExpression><![CDATA[$F{tahun_ajaran}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="207" y="56" width="71" height="20" uuid="5ba2588c-c523-4871-a2ae-554cbed19b8e"/>
+				<text><![CDATA[Tahun Ajaran :]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="11" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="23" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="26" height="20" uuid="032ef5c3-a44a-4476-9800-98e3a4111a0c"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[No.]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="20" width="555" height="1" uuid="6f1578b4-0af6-4f2e-a206-3e8ea4c2f40d"/>
+			</line>
+			<staticText>
+				<reportElement x="26" y="0" width="80" height="20" uuid="82c4ba91-3466-4459-b2c0-960290170f0b"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[No Pendaftaran]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="106" y="0" width="132" height="20" uuid="8d38e6ff-653e-4d9b-aef1-bec467bec0f5"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nama]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="238" y="0" width="73" height="20" uuid="1cf2fc9b-0002-49bc-83f4-a5577f5eb6b1"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Jenis Kelamin]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="311" y="0" width="115" height="20" uuid="db0a87b1-519d-432a-a802-0dac1182acc9"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Tempat Lahir]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="426" y="0" width="100" height="20" uuid="d08cb9ed-781b-4a59-a7dc-c2cf1eea1feb"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Tgl Lahir]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="22" splitType="Stretch">
+			<textField>
+				<reportElement x="3" y="0" width="23" height="20" uuid="a435657e-1124-471a-a872-d93f15aa531a"/>
+				<textFieldExpression><![CDATA[$V{no}.intValue()+1]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="0" y="20" width="555" height="1" uuid="a5c4af4f-2318-4aa7-8fa6-343aa46d4985"/>
+			</line>
+			<textField>
+				<reportElement x="26" y="0" width="77" height="20" uuid="7aaee4a6-78cb-4441-9e1e-5aa0902987bd"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{no_pendaftaran}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="111" y="0" width="127" height="20" uuid="31f2cb55-1f16-43f6-bdac-4123770a71b9"/>
+				<textFieldExpression><![CDATA[$F{bio_nama_lengkap}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="238" y="0" width="73" height="20" uuid="5fe30972-9716-4026-a5d2-d7e3167663f3"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{bio_jenis_kelamin}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="311" y="0" width="115" height="20" uuid="c51321ac-3899-4ed1-93aa-3cfc1f077478"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{bio_tempat_lahir}.toString()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="426" y="0" width="100" height="20" uuid="15fa2ceb-b07d-4b01-98a9-6a9d1c16aa7b"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{bio_tanggal_lahir}.toString()]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
